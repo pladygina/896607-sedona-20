@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Полина Ладыгина](https://up.htmlacademy.ru/adaptive/20/user/896607).
-* Наставник: `Неизвестно`.
+* Наставник: [Алексей Удод](https://htmlacademy.ru/profile/id523387).
 
 ---
 
