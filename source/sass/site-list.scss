@@ -1,0 +1,28 @@
+.site-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  list-style: none;
+}
+
+// пока без теней и декоративного элемента снизу
+
+.site-list__item {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-color: $primary-color;
+}
+
+.site-list__link {
+  min-height: 55px;
+  margin: 0;
+  font-size: 18px;
+  line-height: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $basic-background;
+  padding-top: 10px;
+}
