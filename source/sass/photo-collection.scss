@@ -1,0 +1,54 @@
+.photo-collection {
+  margin: 0;
+  background-color: $basic-background;
+}
+
+// псевдоэлемент для лайка
+
+.photo-collection__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid $photo-line;
+}
+
+.photo-collection__item {
+  height: 416px;
+  margin: 0;
+  padding-top: 23px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid $photo-line;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+}
+
+.photo-collection__photo-title {
+  margin: 0;
+  padding: 0;
+}
+
+.photo-collection__photo {
+  order: -2;
+  margin: 0;
+  margin-bottom: 11px;
+}
+
+.photo-collection__photo-author {
+  margin: 0;
+  margin-bottom: 13px;
+  padding: 0;
+  font-weight: normal;
+  text-transform: none;
+}
+
+.photo-collection__likes {
+  margin: 0;
+  padding: 0;
+  padding-left: 57px;
+}

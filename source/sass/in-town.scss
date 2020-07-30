@@ -1,0 +1,30 @@
+.in-town {
+  margin: 0;
+  padding: 40px;
+  padding-left: 70px;
+  background-color: $basic-background;
+  text-align: left;
+}
+
+// псевдоэлементы к in-town__item
+
+.in-town__title {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  color: $title-color;
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.in-town__text {
+  font-size: 14px;
+  line-height: 21px;
+  color: $main-text;
+  margin: 0;
+  margin-bottom: 35px;
+}
+
+.in-town__item--food .in-town__text {
+  margin-bottom: 0;
+}

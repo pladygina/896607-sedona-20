@@ -1,0 +1,28 @@
+.page-title {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+  padding-top: 32px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 11px;
+}
+
+.page-title__title {
+  padding-left: 12px;
+  padding-right: 12px;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  color: $title-color;
+}
+
+.page-title__subtitle {
+  font-size: 14px;
+  line-height: 24px;
+  color: $main-text;
+}
+
+.page-title__subtitle--main {
+  line-height: 26px;
+}
