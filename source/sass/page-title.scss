@@ -1,11 +1,20 @@
 .page-title {
+  width: $mobile-min-width;
   text-align: center;
   text-transform: uppercase;
-  margin: 0;
+  margin: 0 auto;
   padding-top: 32px;
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 11px;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+  }
 }
 
 .page-title__title {
@@ -15,12 +24,22 @@
   line-height: 26px;
   font-weight: bold;
   color: $title-color;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+  }
 }
 
 .page-title__subtitle {
   font-size: 14px;
   line-height: 24px;
   color: $main-text;
+}
+
+.page-title__subtitle .wrapping {
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
 }
 
 .page-title__subtitle--main {

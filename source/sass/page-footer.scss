@@ -1,15 +1,30 @@
 .page-footer {
-    background-color: $basic-background;
+  background-color: $basic-background;
 }
 
 .page-footer__wrapper {
-  width: 320px;
+  width: $mobile-min-width;
+  min-height: 233px;
   margin: 0 auto;
   padding: 0;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    min-width: $tablet-width;
+    min-height: 120px;
+    flex-direction: row;
+    align-items: baseline;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: $desktop-width;
+    justify-content: space-between;
+    padding-left: 104px;
+    padding-right: 120px;
+  }
 }
 
 .page-footer__footer-tag {

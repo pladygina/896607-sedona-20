@@ -4,6 +4,13 @@
   padding-left: 70px;
   background-color: $basic-background;
   text-align: left;
+
+  @media (min-width: $tablet-width) {
+    min-height: 330px;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 // псевдоэлементы к in-town__item
