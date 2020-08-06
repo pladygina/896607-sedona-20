@@ -31,45 +31,47 @@
         </div>
       </nav>
       <div class="page-header__intro site-intro">
-        <img src="img/text-sedona.svg" width="229" height="39" alt="Sedona">
+        <img class="site-intro__text" src="img/text-sedona.svg" width="229" height="39" alt="Sedona">
       </div>
     </header>
 
     <main class="page-main">
       <section class="page-title">
         <h1 class="page-title__title">Фото и видео</h1>
-        <p class="page-title__subtitle">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+        <p class="page-title__subtitle">Не можете решиться на путешествие из-за курса?<br class="wrapping">
+        Фотографии помогут вам забыть о политике и экономике.</p>
       </section>
       <section class="photo-collection">
-        <div class="photo-collection__wrapper">
-          <ul class="photo-collection__list">
-            <li class="photo-collection__item">
-              <h4 class="photo-collection__photo-title">Неродные просторы</h4>
+        <ul class="photo-collection__list">
+          <li class="photo-collection__item">
+            <h4 class="photo-collection__photo-title">Неродные просторы</h4>
+            <picture class="photo-collection__photo">
+              <source media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.jpg">
+              <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg">
               <img class="photo-collection__photo" src="img/photo-sunset-mobile@1x.jpg" width="280" height="280" alt="Неродные просторы">
-              <p class="photo-collection__photo-author">Автор фото: Борис</p>
-              <p class="photo-collection__likes">1350</p>
-            </li>
-            <li class="photo-collection__item">
-              <h4 class="photo-collection__photo-title">Местная растительность</h4>
-              <img class="photo-collection__photo" src="img/photo-cactus-mobile@1x.jpg" width="280" height="280" alt="Местная растительность">
-              <p class="photo-collection__photo-author">Автор фото: Сергей</p>
-              <p class="photo-collection__likes">143</p>
-            </li>
-            <li class="photo-collection__item">
-              <h4 class="photo-collection__photo-title">Дорога на север</h4>
-              <img class="photo-collection__photo" src="img/photo-roads-mobile@1x.jpg" width="280" height="280" alt="Дорога на север">
-              <p class="photo-collection__photo-author">Автор фото: Петр</p>
-              <p class="photo-collection__likes">96</p>
-            </li>
-            <li class="photo-collection__item">
-              <h4 class="photo-collection__photo-title">Мост дьявола</h4>
-              <img class="photo-collection__photo" src="img/photo-bridge-mobile@1x.jpg" width="280" height="280" alt="Мост дьявола">
-              <p class="photo-collection__photo-author">Автор фото: Антон</p>
-              <p class="photo-collection__likes">254</p>
-            </li>
-
-          </ul>
-        </div>
+            </picture>
+            <p class="photo-collection__photo-author">Автор фото: Борис</p>
+            <p class="photo-collection__likes">1350</p>
+          </li>
+          <li class="photo-collection__item">
+            <h4 class="photo-collection__photo-title">Местная растительность</h4>
+            <img class="photo-collection__photo" src="img/photo-cactus-mobile@1x.jpg" width="280" height="280" alt="Местная растительность">
+            <p class="photo-collection__photo-author">Автор фото: Сергей</p>
+            <p class="photo-collection__likes">143</p>
+          </li>
+          <li class="photo-collection__item">
+            <h4 class="photo-collection__photo-title">Дорога на север</h4>
+            <img class="photo-collection__photo" src="img/photo-roads-mobile@1x.jpg" width="280" height="280" alt="Дорога на север">
+            <p class="photo-collection__photo-author">Автор фото: Петр</p>
+            <p class="photo-collection__likes">96</p>
+          </li>
+          <li class="photo-collection__item">
+            <h4 class="photo-collection__photo-title">Мост дьявола</h4>
+            <img class="photo-collection__photo" src="img/photo-bridge-mobile@1x.jpg" width="280" height="280" alt="Мост дьявола">
+            <p class="photo-collection__photo-author">Автор фото: Антон</p>
+            <p class="photo-collection__likes">254</p>
+          </li>
+        </ul>
       </section>
       <section class="promo-video">
         <h2 class="promo-video__title">Все еще сомневаетесь?</h2>

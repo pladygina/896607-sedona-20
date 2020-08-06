@@ -1,14 +1,40 @@
 .page-header {
-  margin: 0;
+  width: $mobile-min-width;
+  margin: 0 auto;
   padding: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    width: $tablet-width;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+  }
 }
 
+// изменение логотипа в зависимости от ширины экрана - сделать его
+// все-таки фоном?
 .page-header__logo {
-  margin: 0;
+  height: 84px;
+  margin: 0 auto;
   padding: 0;
-  display: flex;
-  justify-content: center;
+  display: block;
+  background-color: transparent;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 0;
+    left: 333px;
+    z-index: 10;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 97px;
+    left: 505px;
+  }
 }

@@ -1,10 +1,22 @@
 .promo-video {
+  width: $mobile-min-width;
+  min-height: 500px;
   margin: 0;
   padding-top: 32px;
   background-color: $basic-background;
   text-align: center;
   text-transform: uppercase;
 
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+    padding: 0 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+    padding: 0;
+  }
+}
 }
 
 .promo-video__title {
