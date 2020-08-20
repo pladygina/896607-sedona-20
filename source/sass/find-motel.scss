@@ -1,9 +1,15 @@
 .find-motel {
+  min-height: 647px;
   background-color: $basic-background;
   text-align: center;
   text-transform: uppercase;
   margin: 0;
   padding-top: 33px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 668px;
+    padding-top: 58px;
+  }
 }
 
 .find-motel__title {
@@ -13,4 +19,8 @@
   color: $title-color;
   margin: 0;
   margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+  }
 }

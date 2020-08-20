@@ -1,11 +1,13 @@
 .photo-collection {
   width: $mobile-min-width;
-  margin: 0 auto;
+  margin: 27px auto;
   background-color: $basic-background;
 
   @media (min-width: $tablet-width) {
     width: $tablet-width;
-    padding: 0 60px;
+    padding-top: 25px;
+    padding-left: 60px;
+    padding-right: 60px;
   }
 
   @media (min-width: $desktop-width) {
@@ -13,8 +15,6 @@
     padding: 0;
   }
 }
-
-// псевдоэлемент для лайка - или инлайново? надо перекрашивать
 
 .photo-collection__list {
   list-style: none;
@@ -56,6 +56,7 @@
 
   @media (min-width: $desktop-width) {
     min-height: 267px;
+    width: 400px;
   }
 }
 
@@ -92,6 +93,7 @@
 
 .photo-collection__photo-title {
   margin: 0;
+  margin-top: 8px;
   padding: 0;
   color: $title-color;
 
@@ -100,7 +102,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 209px;
+    padding-top: 195px;
     color: $basic-background;
     z-index: 10;
   }
@@ -108,18 +110,21 @@
 
 .photo-collection__item:first-child .photo-collection__photo-title {
   @media (min-width: $desktop-width) {
-    padding-top: 342px;
+    padding-top: 328px;
   }
 }
 
-.photo-collection__photo {
+.photo-collection__link {
   order: -2;
+}
+
+.photo-collection__photo {
   margin: 0;
-  margin-bottom: 11px;
+  margin-bottom: 1px;
 
   @media (min-width: $tablet-width) {
     width: 324px;
-    height: auto;
+    height: 267px;
   }
 
   @media (min-width: $desktop-width) {
@@ -127,7 +132,6 @@
     top: 0;
     left: 0;
     width: 400px;
-    height: auto;
     margin-bottom: 0;
   }
 }
@@ -135,6 +139,7 @@
 .photo-collection__item:first-child .photo-collection__photo {
   @media (min-width: $tablet-width) {
     width: 648px;
+    height: 400px;
   }
 
   @media (min-width: $desktop-width) {
@@ -163,13 +168,14 @@
 .photo-collection__likes {
   margin: 0;
   padding: 0;
-  padding-left: 57px;
+  padding-left: 37px;
   color: $title-color;
+  position: relative;
 
   @media (min-width: $tablet-width) {
-    width: 53px;
+    width: 50px;
     position: absolute;
-    right: 53px;
+    right: 40px;
     bottom: 26px;
   }
 
@@ -177,4 +183,18 @@
     color: $basic-background;
     z-index: 10;
   }
+}
+
+.photo-collection__likes::before {
+  content: "";
+  width: 23px;
+  height: 21px;
+  position: absolute;
+  left: 4px;
+  top: 0;
+  background-image: url("../img/icon-like.svg");
+  background-repeat: no-repeat;
+  background-position: 0;
+  opacity: 0.3;
+  z-index: 10;
 }
