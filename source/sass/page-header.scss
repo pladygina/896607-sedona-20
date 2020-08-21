@@ -20,17 +20,17 @@
 // изменение логотипа в зависимости от ширины экрана - сделать его
 // все-таки фоном?
 .page-header__logo {
-  height: 84px;
+  height: 56px;
   margin: 0 auto;
   padding: 0;
   display: block;
   background-color: transparent;
+  z-index: 10;
 
   @media (min-width: $tablet-width) {
     position: absolute;
     top: 0;
     left: 333px;
-    z-index: 10;
   }
 
   @media (min-width: $desktop-width) {

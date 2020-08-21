@@ -1,7 +1,11 @@
 .copyright {
   display: flex;
   justify-content: center;
-  align-items: baseline;
+  align-items: bottom;
+
+  @media (min-width: $tablet-width) {
+    align-items: bottom;
+  }
 }
 
 .copyright__title {
@@ -9,6 +13,10 @@
   line-height: 26px;
   font-weight: normal;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 20px;
+  }
 }
 
 .copyright__link {
@@ -17,6 +25,21 @@
   height: 34px;
   margin: 0;
   padding: 0;
-}
+  color: $title-color;
 
-// размеры логотипа
+  &:hover,
+  &:focus {
+    color: $primary-color;
+    outline: none;
+  }
+
+  &:active {
+    color: $title-color;
+    outline: none;
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 20px;
+  }
+}

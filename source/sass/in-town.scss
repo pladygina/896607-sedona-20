@@ -1,19 +1,74 @@
 .in-town {
   margin: 0;
-  padding: 40px;
-  padding-left: 70px;
+  padding: 35px;
+  padding-bottom: 12px;
   background-color: $basic-background;
   text-align: left;
+  display: flex;
+  flex-direction: column;
 
   @media (min-width: $tablet-width) {
     min-height: 330px;
     padding: 0;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    flex-direction: row;
   }
 }
 
-// псевдоэлементы к in-town__item
+.in-town__item {
+  margin: 0;
+  margin-bottom: 25px;
+  padding: 0;
+  padding-left: 32px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 158px;
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 33.3%;
+    text-align: center;
+  }
+}
+
+.in-town__item--food {
+  @media (max-width: $mobile-width-only) {
+    order: 3;
+  }
+}
+
+.in-town__item::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  left: -15px;
+  top: -10px;
+  background-image: url("../img/icon-house.svg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    height: 76px;
+    left: 0;
+    top: auto;
+    bottom: 172px;
+  }
+}
+
+.in-town__item--souvenirs::after {
+  background-image: url("../img/icon-gift.svg");
+}
+
+.in-town__item--food::after {
+  background-image: url("../img/icon-burger.svg");
+
+  @media (min-width: $tablet-width) {
+    height: 68px;
+  }
+}
 
 .in-town__title {
   font-size: 18px;
@@ -21,7 +76,12 @@
   font-weight: bold;
   color: $title-color;
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 17px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    margin-bottom: 23px;
+  }
 }
 
 .in-town__text {
@@ -29,7 +89,12 @@
   line-height: 21px;
   color: $main-text;
   margin: 0;
-  margin-bottom: 35px;
+}
+
+.in-town__text .wrapping {
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
 }
 
 .in-town__item--food .in-town__text {

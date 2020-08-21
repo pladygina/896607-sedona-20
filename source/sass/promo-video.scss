@@ -1,27 +1,35 @@
 .promo-video {
   width: $mobile-min-width;
-  min-height: 500px;
-  margin: 0;
-  padding-top: 32px;
+  min-height: 480px;
+  margin: 0 auto;
+  padding: 0;
   background-color: $basic-background;
   text-align: center;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
     width: $tablet-width;
+    min-height: 758px;
     padding: 0 60px;
   }
 
   @media (min-width: $desktop-width) {
     width: $desktop-width;
+    min-height: 804px;
     padding: 0;
   }
 }
 
 .promo-video__title {
   margin: 0;
-  font-size: 21px;
+  padding: 0;
+  font-size: 18px;
   line-height: 26px;
   font-weight: bold;
   color: $title-color;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    padding-top: 31px;
+  }
 }
