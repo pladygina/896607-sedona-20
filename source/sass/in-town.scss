@@ -23,10 +23,15 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 158px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 32px;
+    padding-right: 32px;
     width: 33.3%;
     text-align: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 50px;
+    padding-right: 50px;
   }
 }
 
@@ -91,9 +96,19 @@
   margin: 0;
 }
 
-.in-town__text .wrapping {
-  @media (max-width: $mobile-width-only) {
-    display: none;
+.in-town__text .wrapping-desktop {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: inline;
+  }
+}
+
+.in-town__text .wrapping-tablet {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: inline;
   }
 }
 
