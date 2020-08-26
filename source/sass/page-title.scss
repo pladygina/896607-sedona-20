@@ -21,6 +21,13 @@
   }
 }
 
+.page-title--main {
+  @media (min-width: $desktop-width) {
+    padding-top: 36px;
+    margin-bottom: 42px;
+  }
+}
+
 .page-title__title {
   margin-bottom: 31px;
   padding-left: 8px;

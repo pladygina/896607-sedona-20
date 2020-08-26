@@ -10,7 +10,11 @@
   <body class="page__body">
     <header class="page-header">
       <a class="page-header__logo">
-        <img src="img/logo-sedona-mobile.svg" width="102" height="84" alt="Логотип города Седона">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+          <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="84" alt="Логотип города Седона">
+        </picture>
       </a>
       <nav class="main-nav main-nav--nojs">
         <div class="main-nav__wrapper">
@@ -39,7 +43,7 @@
     </header>
 
     <main class="page-main">
-      <section class="page-title">
+      <section class="page-title page-title--main">
         <h1 class="page-title__title page-title__title--main">Седона — небольшой городок в Аризоне,<br>
         заслуживающий большего!</h1>
         <p class="page-title__subtitle page-title__subtitle--main">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
@@ -54,22 +58,27 @@
               <p class="advantages__number">— №1 —</p>
               <p class="advantages__text">Седона не аттракцион для туристов, там течет своя жизнь</p>
             </div>
-            <img class="advantages__picture" src="img/main-city-mobile@1x.jpg" width="320" height="260" alt="Одно из городских зданий">
+            <picture class="advantages__picture">
+              <source media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.jpg 1x,
+              img/main-city-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/main-city-tablet@1x.jpg 1x,
+              img/main-city-tablet@2x.jpg 2x">
+              <img class="advantages__picture" src="img/main-city-mobile@1x.jpg" width="320" height="260" alt="Одно из городских зданий" srcset="img/main-city-mobile@2x.jpg 2x">
+            </picture>
             <dl class="advantages__details in-town">
               <div class="in-town__item in-town__item--motels">
                 <dt class="in-town__title">Жилье</dt>
-                <dd class="in-town__text">Рекомендуем пожить в настоящем мотеле, все <br class="wrapping">
-                как в кино!</dd>
+                <dd class="in-town__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</dd>
               </div>
               <div class="in-town__item in-town__item--food">
                 <dt class="in-town__title">Еда</dt>
-                <dd class="in-town__text">Всегда заказывайте фирменный бургер, <br class="wrapping">
+                <dd class="in-town__text">Всегда заказывайте фирменный бургер, <br class="wrapping-tablet">
                 вы не разочаруетесь!</dd>
               </div>
               <div class="in-town__item in-town__item--souvenirs">
                 <dt class="in-town__title">Сувениры</dt>
-                <dd class="in-town__text">Не только китайского, но <br class="wrapping">
-                и местного производства!</dd>
+                <dd class="in-town__text">Не только китайского,<br class="wrapping-desktop">
+                но и местного производства!</dd>
               </div>
             </dl>
           </li>
@@ -80,7 +89,13 @@
               <p class="advantages__number">— №2 —</p>
               <p class="advantages__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
             </div>
-            <img class="advantages__picture" src="img/main-bridge-mobile@1x.jpg" width="320" height="260" alt="Вид на Мост дьявола">
+            <picture class="advantages__picture">
+              <source media="(min-width: 1200px)" srcset="img/main-bridge-desktop@1x.jpg 1x,
+              img/main-bridge-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.jpg 1x,
+              img/main-bridge-tablet@2x.jpg 2x">
+              <img class="advantages__picture" src="img/main-bridge-mobile@1x.jpg" width="320" height="260" alt="Вид на Мост дьявола" srcset="img/main-bridge-mobile@2x.jpg 2x">
+            </picture>
           </li>
           <li class="advantages__item advantages__item--small">
             <div class="advantages__description">

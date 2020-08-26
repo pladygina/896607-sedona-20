@@ -17,8 +17,6 @@
   }
 }
 
-// изменение логотипа в зависимости от ширины экрана - сделать его
-// все-таки фоном?
 .page-header__logo {
   height: 56px;
   margin: 0 auto;
@@ -37,4 +35,10 @@
     height: 97px;
     left: 505px;
   }
+}
+
+.page-header__logo-image {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
 }

@@ -1,5 +1,5 @@
 .find-motel {
-  min-height: 647px;
+  min-height: 660px;
   background-color: $basic-background;
   text-align: center;
   text-transform: uppercase;
@@ -9,6 +9,10 @@
   @media (min-width: $tablet-width) {
     min-height: 668px;
     padding-top: 58px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 682px;
   }
 }
 
