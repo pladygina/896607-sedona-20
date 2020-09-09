@@ -28,6 +28,13 @@
   }
 }
 
+.page-title--form {
+  @media (min-width: $desktop-width) {
+    padding-top: 76px;
+    margin-bottom: 56px;
+  }
+}
+
 .page-title__title {
   margin-bottom: 31px;
   padding-left: 8px;
@@ -58,7 +65,7 @@
   color: $main-text;
 }
 
-.page-title__subtitle .wrapping {
+.page-title__subtitle .page-title__wrapping {
   @media (max-width: $mobile-width-only) {
     display: none;
   }
