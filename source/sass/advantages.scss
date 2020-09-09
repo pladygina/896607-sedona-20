@@ -86,14 +86,13 @@
   margin-bottom: 12px;
   padding: 0;
 
-  @media (max-width: $mobile-width-only) {
-    & .wrapping {
-      display: none;
-    }
-  }
-
   @media (min-width: $tablet-width) {
     font-size: 21px;
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 105px;
   }
 }
 
@@ -258,11 +257,11 @@
 
 .advantages__item--road .advantages__text {
   @media (min-width: $tablet-width) {
-    padding: 0 33px;
+    padding: 0 35px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 40px;
+    padding: 0 42px;
   }
 }
 
@@ -270,4 +269,14 @@
   @media (min-width: $desktop-width) {
     padding: 0 40px;
   }
+}
+
+.advantages__tablet-wrapping {
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
+}
+
+.advantages__after-wrapping {
+  width: 3px;
 }
