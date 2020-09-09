@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Седона</title>
-    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="preload" href="/fonts/ptsans.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="/fonts/ptsansbold.woff2" as="font" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/style.min.css">
   </head>
   <body class="page__body">
@@ -69,8 +70,7 @@
         <ul class="advantages__list">
           <li class="advantages__item advantages__item--town">
             <div class="advantages__description">
-              <h3 class="advantages__title">Настоящий <br class="wrapping">
-              городок</h3>
+              <h3 class="advantages__title">Настоящий городок</h3>
               <p class="advantages__number">— №1 —</p>
               <p class="advantages__text">Седона не аттракцион для туристов, там течет своя жизнь</p>
             </div>
@@ -95,19 +95,19 @@
               </div>
               <div class="in-town__item in-town__item--food">
                 <dt class="in-town__title">Еда</dt>
-                <dd class="in-town__text">Всегда заказывайте фирменный бургер, <br class="wrapping-tablet">
+                <dd class="in-town__text">Всегда заказывайте фирменный бургер, <br class="in-town__wrapping-tablet">
                 вы не разочаруетесь!</dd>
               </div>
               <div class="in-town__item in-town__item--souvenirs">
                 <dt class="in-town__title">Сувениры</dt>
-                <dd class="in-town__text">Не только китайского,<br class="wrapping-desktop">
+                <dd class="in-town__text">Не только китайского,<br class="in-town__wrapping-desktop">
                 но и местного производства!</dd>
               </div>
             </dl>
           </li>
           <li class="advantages__item advantages__item--bridge">
             <div class="advantages__description">
-              <h3 class="advantages__title">Там есть <br class="wrapping">
+              <h3 class="advantages__title">Там есть <br class="advantages__tablet-wrapping"><span class="advantages__after-wrapping"></span>
               Мост дьявола</h3>
               <p class="advantages__number">— №2 —</p>
               <p class="advantages__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
@@ -129,24 +129,21 @@
           </li>
           <li class="advantages__item advantages__item--small">
             <div class="advantages__description">
-              <h3 class="advantages__title">Небольшая <br class="wrapping">
-              площадь</h3>
+              <h3 class="advantages__title">Небольшая площадь</h3>
               <p class="advantages__number">— №3 —</p>
               <p class="advantages__text">Все интересные места находятся очень близко</p>
             </div>
           </li>
           <li class="advantages__item advantages__item--road">
             <div class="advantages__description">
-              <h3 class="advantages__title">Красивая <br class="wrapping">
-              дорога</h3>
+              <h3 class="advantages__title">Красивая дорога</h3>
               <p class="advantages__number">— №4 —</p>
               <p class="advantages__text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
             </div>
           </li>
           <li class="advantages__item advantages__item--uncrowded">
             <div class="advantages__description">
-              <h3 class="advantages__title">Мало
-              <br class="wrapping">туристов</h3>
+              <h3 class="advantages__title">Мало туристов</h3>
               <p class="advantages__number">— №5 —</p>
               <p class="advantages__text">Большинство едет в Гранд каньон и толпится там</p>
             </div>
@@ -155,7 +152,10 @@
       </section>
       <section class="find-motel">
         <h2 class="find-motel__title">Заинтересовались?</h2>
-        <!-- не размечается в первом задании -->
+        <p class="find-motel__subtitle">Укажите предполагаемые даты поездки, <br class="find-motel__wrapping-tablet">
+        и мы покажем вам лучшие предложения гостиниц в Cедоне</p>
+        <a class="find-motel__search-button" href="">Найти гостиницу</a>
+        <iframe class="find-motel__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2313290.624131322!2d-112.41763979015376!3d35.08749826058688!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1599423188073!5m2!1sru!2sru" width="768" height="350" title="Карта окрестностей"></iframe>
       </section>
     </main>
 

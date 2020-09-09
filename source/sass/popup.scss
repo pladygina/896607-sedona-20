@@ -1,0 +1,134 @@
+.popup {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  z-index: 40;
+}
+
+.popup.hide {
+  width: 0;
+  height: 0;
+}
+
+.popup__box {
+  width: 320px;
+  height: 280px;
+  flex-shrink: 0;
+  transform: translateX(-9px);
+  background-color: $basic-background;
+  box-shadow: 0 7px 15px $popup-shadow;
+  padding-top: 40px;
+  padding-left: 41px;
+  padding-right: 41px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: 400px;
+    height: 347px;
+    padding-top: 50px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+
+.popup__box--success {
+  height: 323px;
+  padding: 0;
+  background-color: $light-background;
+
+  @media (min-width: $tablet-width) {
+    width: 640px;
+    height: 347px;
+  }
+}
+
+.popup__message-container {
+  width: 100%;
+  height: 225px;
+  margin: 0;
+  padding: 30px 40px 21px;
+  background-color: $basic-background;
+
+  @media (min-width: $tablet-width) {
+    height: 201px;
+    padding-top: 46px;
+  }
+}
+
+.popup__title {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  margin: 0;
+  margin-bottom: 27px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 40px;
+    padding: 0 20px;
+  }
+}
+
+.popup__box--success .popup__title {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 24px;
+  }
+}
+
+.popup__text {
+  font-size: 14px;
+  line-height: 24px;
+  margin: 0;
+  margin-bottom: 22px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 36px;
+  }
+}
+
+.popup__button-close {
+  width: 180px;
+  height: 58px;
+  background-color: $primary-color;
+  border: none;
+  color: $basic-background;
+  font-family: $main-font;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  text-transform: uppercase;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    background-color: $background-hover;
+  }
+
+  &:active {
+    outline: none;
+    background-color: $background-down;
+    color: rgba($basic-background, 0.3);
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 272px;
+    font-size: 21px;
+  }
+}
+
+.popup__box--success .popup__button-close {
+  width: 280px;
+  margin-top: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 458px;
+    margin-top: 44px;
+  }
+}

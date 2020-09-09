@@ -10,6 +10,7 @@ const rename = require("gulp-rename");
 const imagemin = require("gulp-imagemin");
 const webp = require("gulp-webp");
 const del = require("del");
+const htmlmin = require("gulp-htmlmin");
 
 // Styles
 
@@ -35,7 +36,7 @@ exports.styles = styles;
 const server = (done) => {
   sync.init({
     server: {
-      baseDir: 'build'
+      baseDir: "build"
     },
     cors: true,
     notify: false,
@@ -105,6 +106,7 @@ const html = () => {
   ], {
     base: "source"
   })
+  .pipe(htmlmin({ collapseWhitespace: true }))
   .pipe(gulp.dest("build"));
 }
 
@@ -120,5 +122,7 @@ const build = gulp.series (
 exports.build = build;
 
 exports.default = gulp.series(
-  build, server, watcher
+  build,
+  server,
+  watcher
 );
