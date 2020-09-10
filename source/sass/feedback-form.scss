@@ -312,9 +312,15 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 22.5%;
+    width: 22.3%;
     margin-left: 0;
-    margin-right: 20px;
+    margin-right: 34px;
+  }
+
+  &:nth-child(3) {
+    @media (min-width: $desktop-width) {
+      width: 20%;
+    }
   }
 
   &:last-child {
@@ -450,27 +456,30 @@
   line-height: 26px;
   font-weight: bold;
   color: $title-color;
-  border: none;
+  border: 4px solid $light-background;
   background-color: $light-background;
 
   &:hover {
     outline: none;
     background-color: $photo-line;
+    border-color: $photo-line;
   }
 
   &:active,
   &:focus {
     outline: none;
     background-color: $basic-background;
-    border: 4px solid $photo-line;
+    border-color: $photo-line;
   }
 }
 
 .feedback-form__input--text {
   width: 178px;
   flex-grow: 1;
-  padding-left: 21px;
+  padding-left: 17px;
   padding-top: 6px;
+  font-family: $main-font;
+  color: $title-color;
 }
 
 .feedback-form__point--client-contacts .feedback-form__input--text {
@@ -505,17 +514,19 @@
   font-family: $main-font;
   color: $title-color;
   opacity: 1;
+  padding: 0;
+  margin: 0;
 }
 
 .feedback-form__input--textarea {
   width: 280px;
   height: 160px;
-  padding-top: 12px;
-  padding-left: 21px;
+  padding-top: 8px;
+  padding-left: 17px;
 
   @media (min-width: $tablet-width) {
     width: 648px;
-    padding-top: 16px;
+    padding-top: 12px;
   }
 
   @media (min-width: $desktop-width) {
@@ -550,7 +561,6 @@
   text-transform: uppercase;
   text-align: center;
   margin: 20px 20px 60px;
-  padding-top: 14px;
   padding-left: 6px;
 
   @media (min-width: $tablet-width) {
